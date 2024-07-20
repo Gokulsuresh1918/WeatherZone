@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Temperature from "./componenets/Temperature";
 import Highlights from "./componenets/Highlights";
+import LoginPage from "./componenets/login";
 
 function App() {
   const [city, setCity] = useState("New Delhi");
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=0eb2f9e6dd554873aa7120429230511&q=${city}&aqi=no;`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=a8b9ef8f5c964c41971100418242007&q=${city}&aqi=no;`;
 
     fetch(apiUrl)
       .then((res) => {
@@ -25,6 +26,7 @@ function App() {
       });
   }, [city]);
   return (
+      // <LoginPage/>
     <div className="bg-slate-800 h-screen flex justify-center  items-start">
       <div className="w-1/5 h-1/3 mt-40">
         {weatherData && (
