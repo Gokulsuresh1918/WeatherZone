@@ -1,7 +1,7 @@
 import React from 'react';
-import image from '../../public/file.png';
-import googleLogo from '../../public/file (2).png';
-import githubLogo from '../../public/file (1).png';
+import image from '../public/file.png';
+import googleLogo from '../public/github.png';
+import githubLogo from '../public/google.png';
 import { MDBContainer, MDBCol, MDBRow, MDBBtn } from 'mdb-react-ui-kit';
 
 function LoginPage() {
