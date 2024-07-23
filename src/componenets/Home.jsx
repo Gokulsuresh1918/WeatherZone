@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Temperature from "./Temperature";
 import Highlights from "./Highlights";
-import Navbar from "./NavBar"; 
+import Navbar from "./Navbar"; // Ensure the correct path and casing
+
 function Home({ user }) {
   const [city, setCity] = useState("New Delhi");
   const [weatherData, setWeatherData] = useState(null);
@@ -27,14 +28,12 @@ function Home({ user }) {
 
   const handleSignOut = async () => {
     try {
-      
-        await axios.get('http://localhost:3001/auth/logout'); 
-        window.reload()
+      await axios.get("http://localhost:3001/auth/logout");
+      window.reload();
     } catch (error) {
-        console.error("Error signing out:", error);
+      console.error("Error signing out:", error);
     }
-};
-
+  };
 
   return (
     <div className="bg-slate-800 h-screen flex flex-col">
