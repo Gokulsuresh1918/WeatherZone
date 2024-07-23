@@ -41,7 +41,7 @@ function Home({ user }) {
     <div className="bg-slate-800 h-screen flex flex-col">
       <Navbar onSignOut={handleSignOut} /> {/* Add Navbar component */}
       <div className="flex-grow flex justify-center items-start mt-10">
-        <div className="w-1/5 h-1/3">
+        <div className="w-2/5 h-1/3">
           {weatherData && (
             <Temperature
               setCity={setCity}
@@ -56,8 +56,8 @@ function Home({ user }) {
           )}
         </div>
         <div className="w-1/3 h-1/3 p-10 grid grid-cols-2 gap-6">
-          <h1 className="text-slate-200 text-2xl col-span-2">
-            Today's Highlights
+          <h1 className="text-orange-400 text-4xl col-span-2">
+            Today's Weather ⛈️
           </h1>
           {weatherData && (
             <>

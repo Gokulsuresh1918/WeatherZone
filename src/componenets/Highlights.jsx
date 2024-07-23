@@ -2,7 +2,7 @@ import React from "react";
 
 function Highlights({ stats }) {
   return (
-    <div className="bg-slate-600 p-2 text-slate-200 flex flex-col justify-start items-center ">
+    <div className="bg-slate-600 p-2 text-slate-200 flex flex-col justify-start items-center shadow-xl shadow-black ">
       <h2 className="text-sm mt-2">{stats.title?stats.title:'API Free tier expired lets show dummy data to show how it works'}</h2>
       <div className="mt-2">
         {" "}
