@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Temperature from "./Temperature";
 import Highlights from "./Highlights";
-import Navbar from "./Navbar"; // Import Navbar component
-
+import Navbar from "./NavBar"; 
 function Home({ user }) {
   const [city, setCity] = useState("New Delhi");
   const [weatherData, setWeatherData] = useState(null);
