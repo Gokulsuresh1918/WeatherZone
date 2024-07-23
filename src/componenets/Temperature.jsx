@@ -1,40 +1,22 @@
 import React from "react";
+import { FaSearch } from 'react-icons/fa';
 
 function Temperature({ setCity, stats }) {
   const handleCityChange = (e) => {
     setCity(e.target.value);
   };
+
   return (
     <>
-      <div className="flex align-middle justify-center">
+      <div className="relative flex align-middle justify-center w-full">
         <input
           type="text"
-          className="bg-slate-600 border border-slate-500 text-slate-200 placeholder-slate-400 text-md focus:border-slate-400 block w-60 p-2 focus:outline-none"
+          className="bg-slate-600 border border-slate-500 text-slate-200 placeholder-slate-400 text-md focus:border-slate-400 block h-12 shadow-lg shadow-black rounded-xl w-full pl-10 pr-12 p-2 focus:outline-none"
           placeholder="Enter Your City Name"
           onChange={handleCityChange}
           defaultValue="New Delhi"
         />
-        <div className="m-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="white"
-            className="w-6 h-6 text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-            />
-          </svg>
-        </div>
+        <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" />
       </div>
 
       <div className="flex justify-center">
@@ -82,7 +64,7 @@ function Temperature({ setCity, stats }) {
         {stats.condition}
       </div>
 
-      <div className="flex justify-center text-slate-400 mt-5 text-[15px]">
+      <div className="flex justify-center font-bold  text-slate-400 mt-5 text-xl">
         Today &#183; {stats.time} | {stats.location}
       </div>
     </>
