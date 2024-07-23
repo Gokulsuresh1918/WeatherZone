@@ -5,7 +5,7 @@ import Highlights from "./Highlights";
 import Navbar from "../components/NavBar"; // Ensure the correct path and casing
 
 function Home({ user }) {
-  const [city, setCity] = useState("New Delhi");
+  const [city, setCity] = useState("Thiruvananthapuram");
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
