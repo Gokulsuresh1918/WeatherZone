@@ -14,7 +14,7 @@ function Home({ user }) {
     fetch(apiUrl)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Could not get    data");
+          throw new Error("Could not get data");
         }
         return res.json();
       })
