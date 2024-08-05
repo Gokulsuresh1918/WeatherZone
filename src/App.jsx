@@ -6,11 +6,12 @@ import LoginPage from "./components/login";
 
 function App() {
   const [user, setUser] = useState(null);
+  console.log(import.meta.env.VITE_SERVER_URL,'app');
 
   useEffect(() => {
     const getUser = async () => {
       try {
-        const url = `http://localhost:3001/auth/login/success`;
+        const url = `${import.meta.env.VITE_SERVER_URL}/auth/login/success`;
         const { data } = await axios.get(url, { withCredentials: true });
         console.log('client vanaii',data);
         setUser(data.user._json);

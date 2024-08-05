@@ -4,10 +4,11 @@ import googleLogo from '../public/google.png';
 import githubLogo from '../public/github.png';
 import { MDBBtn } from 'mdb-react-ui-kit';
 
+
+
 function LoginPage() {
   function googleAuth() {
-    console.log('Server URL:'); 
-    window.open(`http://localhost:3001/auth/google/callback`, "self");
+    window.open(`${import.meta.env.VITE_SERVER_URL}/auth/google/callback`, "self");
     // window.open(`https://weatherzoneserver-1.onrender.com/auth/google/callback`, "self");
     //fdsf
   }

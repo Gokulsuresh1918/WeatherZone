@@ -28,7 +28,7 @@ function Home({ user }) {
 
   const handleSignOut = async () => {
     try {
-      await axios.get("http://localhost:3001/auth/logout");
+      await axios.get(`${import.meta.env.VITE_SERVER_URL}/auth/logout`);
       window.reload();
     } catch (error) {
       console.error("Error signing out:", error);
