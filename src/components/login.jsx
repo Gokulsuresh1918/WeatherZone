@@ -8,6 +8,8 @@ function LoginPage() {
   function googleAuth() {
     console.log('Server URL:'); 
     window.open(`http://localhost:3001/auth/google/callback`, "self");
+    // window.open(`https://weatherzoneserver-1.onrender.com/auth/google/callback`, "self");
+    //fdsf
   }
 
   return (

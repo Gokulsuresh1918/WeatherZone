@@ -14,7 +14,7 @@ function Temperature({ setCity, stats }) {
           className="bg-slate-600 border border-slate-500 text-slate-200 placeholder-slate-400 text-md focus:border-slate-400 block h-12 shadow-lg shadow-black rounded-xl w-full pl-10 pr-12 p-2 focus:outline-none"
           placeholder="Enter Your City Name"
           onChange={handleCityChange}
-          defaultValue="New Delhi"
+          defaultValue="Thiruvananthapuram"
         />
         <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" />
       </div>

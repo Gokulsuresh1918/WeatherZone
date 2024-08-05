@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./componenets/Home";
-import LoginPage from "./componenets/login";
+import Home from "./components/Home";
+import LoginPage from "./components/login";
 
 function App() {
   const [user, setUser] = useState(null);
